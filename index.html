@@ -2,17 +2,65 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>HANGMAHN</title>
+		<title>HANGMAHN</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="assets/javascript/game.js" type="text/javascript"></script>
 </head>
+
 <body>
+	<div class="container" id="game">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-6">
+					<h1> HANGMAN <br> S-N-L!!!</h1>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="text-center">Would you like to play a game? <br> </h2>
+		<h3 class="text-center" id="keyContinue">Hangman - SNL Style - Press any key to continue! <br></h3>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">Current Word</div>
+					<div class="panel-body text-center" id="target"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-5">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">Letters Guessed</div>
+					<div class="panel-body text-center" id="userGuessed"></div>	
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">Guesses Remaining</div>
+					<div class="panel-body text-center" id="guessesLeft"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">Wins</div>
+					<div class="panel-body text-center" id="winsCount"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,23 @@
+.jumbotron {
+	background-image: url(../images/gray_SNL_banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body {
+	background-color: #eee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+	margin-left: 16%;
+	margin-right: 16%;
+}
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
